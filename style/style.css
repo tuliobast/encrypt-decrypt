@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+  --bg-color: #153448;
+  --primary-color: #dfd0b8;
+  --secondary-color: #3C5B6F;
+  --tertiary-color: #948979;
+
+  --primary-font: "Ubuntu", sans-serif;
+  --secondary-font: "Titillium Web", sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--bg-color);
+}
+
+.header{
+  display: flex;
+  margin: 40px 40px 0 0;
+}
+
+.title{
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 40px;
+}
+
+/* textarea para el input */
+textarea{
+  background-color: transparent;
+  width: 100%;
+  /* height: 60%; */
+  border: none;
+  outline: none;
+  font-family: var(--secondary-font);
+  font-size: 32px;
+  color: var(--tertiary-color);
+  padding: 10px;  
+  resize: none;
+}
+
+.text{
+  display: flex;
+  margin-left: 120px;
+  gap: 80px;
+}
+
+.in-text{
+  width: 680px;
+}
+
+.btns{
+  display: flex;
+  gap: 24px;
+}
+
+.btn{
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  width: 328px; 
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 18px;
+  transition: all 0.3s ease; 
+}
+
+.encrypt{
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  margin-top: 20px;
+}
+
+.decrypt{
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  border: 2px solid var(--primary-color);
+  margin-top: 20px;
+}
+
+
+.indication{
+  font-family: var(--secondary-font);
+  color: gray;
+  
+}
+
+/* textarea para el output */
+.text-out{
+  display: flex;
+  width: 400px;
+  background-color: #dfd0b8;
+  border-radius: 18px;
+  padding: 10px 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.no-find{
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: -50px;
+}
+
+
+#text-out{
+  background-image: url("../assets/Muñeco.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.copy{
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer */
+
+.copyright, .author{
+  font-family: var(--secondary-font);
+  color: var(--tertiary-color);
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.rrss{
+  display: flex;
+  justify-content: center; 
+  gap: 10px;  
+}
+
+
+/* mediaqueries para tablet */
+
+@media
+  (max-width: 768px){
+
+  /* textarea */
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+      }
+    
+    .btns{
+      width: 688px;
+    }
+    .text-in{
+      width: 688px;
+    }
+
+    .in-text {
+      display: flex;
+      width: 688px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .text-out{
+      width: 688px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;;
+    }
+
+    .copy{
+      width: 100%;
+    }
+}
+
+/* media queries para movil */
+
+@media(max-width: 375px){
+  .btns{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .text {
+    display: flex;
+    margin-left: 0px;
+    gap: 80px;
+    flex-direction: column;
+    align-content: center;
+}
+  
+  .in-text {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.encrypt{
+  width: 100%;
+}
+
+.decrypt{
+  width: 100%;;
+}
+
+  .text-out{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+  }
+
+  .copy{
+    width: 100%;
+  }
+
+}

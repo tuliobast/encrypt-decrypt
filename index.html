@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Encritador-Desencriptador</title>
+</head>
+
+<body>
+    <header class="header">
+      <img class="header-img" src="./assets/Logo.png" alt="logo alura latam">
+    </header>
+    <h1 class="title">Encritador Online</h1>
+    <main class="text">
+      <div class="in-text">
+        <textarea name="in-text" id="text-in" rows="7">Ingrese el texto aqui</textarea>
+        <p class="indication">! Solo letras minúsculas y sin acentos</p>
+        <div class="btns">
+          <button onclick="encrypt();" class="btn encrypt" id="btn-encrypt">Encriptar</button>
+          <button onclick="decrypt();" class="btn decrypt" id="btn-decrypt">Desencriptar</button>
+        </div>
+      </div>
+      <div class="text-out">
+        <textarea name="texto" id="text-out" rows="7">
+        </textarea>
+        <p class="no-find">Ningun mensaje fue encontadro</p>
+        <!-- <button onclick="copiar();" class="btn copiar">copiar</button> -->
+      </div>
+    </main>
+  <footer>
+    <p class="copyright">Copyright &copy; 2024</p>
+    <p class="author">By Tulio Bastidas</p>
+    <div class="rrss">
+      <a href="https://www.linkedin.com/in/tulio-bastidas-alvarez/" target="_blank">
+        <i class="fa-brands fa-linkedin fa-2xl" style="color: #dfd0b8;"></i>
+      </a>
+      <a href="https://github.com/tuliobast" target="_blank">
+        <i class="fa-brands fa-square-github fa-2xl" style="color: #dfd0b8;"></i>
+      </a>
+      <a href="https://www.instagram.com/tuliobast" target="_blank">
+        <i class="fa-brands fa-square-instagram fa-2xl" style="color: #dfd0b8;"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="./script/app.js"></script>
+</body>
+
+</html>
